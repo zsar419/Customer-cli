@@ -1,5 +1,5 @@
 if(process.env.NODE_ENV === 'production') {
-    module.exports = { mongoURI: '< your mlab db url >' }  // DB for production mlab (heroku deployment)
+    module.exports = { mongoURI: 'mongodb://zeta:zeta@ds113606.mlab.com:13606/customer-cms' }  // DB for production mlab (heroku deployment)
 } else {
-    module.exports = { mongoURI: '< your local mongodb url >' }                      // DB for local deployment
+    module.exports = { mongoURI: 'mongodb://localhost:27017/customercli' }                      // DB for local deployment
 }
